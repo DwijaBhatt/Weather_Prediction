@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-model=pickle.load(open('E:/dwija c bhatt/internship/weather_models.sav','rb'))
+model=pickle.load(open('weather_models.sav','rb'))
 def weather_prediction(input_data):
     inputasarray=np.asarray(input_data)
     input_data_reshape=inputasarray.reshape(1,-1)
